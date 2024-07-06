@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="new.css">
+    <title>Exam</title>
+
+</head>
+<body>
+
+    <div class="container mt-3">
+        <form class="form-container">
+            <div class="row">
+                <div class="col-auto">
+                    <input type="text" class="form-control custom-width" placeholder="Fruits or Legumes" id="inputText" name="item">
+                </div>
+                <div class="col">
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="category" id="radioFruits" value="fruit">
+                        <label class="form-check-label" for="fruit">Fruits</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="category" id="radioLegumes" value="legume">
+                        <label class="form-check-label" for="legume">Legumes</label>
+                    </div>
+                </div>
+                <div class="col-auto ml-auto">
+                    <button type="button" class="btn btn-primary" id="addToSpecific">Add to specific list</button>
+                    <button type="button" class="btn btn-danger" id="addToGeneral">Add to general list</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+
+<div class="container2">
+    <form class="form-container" style="border-bottom: 2px solid blue;">
+        <div class="row align-items-center">
+            <div class="col-auto">
+                <button type="button" class="btn btn-primary1" id="searchButton">Search for item</button>
+                <button type="button" class="btn btn-danger" id="deleteButton">Delete an item</button>
+            </div>
+            <div class="col-auto">
+                <input type="search" class="form-control search" placeholder="Search for fruits or Legumes" name="search" id="searchInput">
+            </div>
+        </div>
+    </form>
+    <hr>
+    <br><br><br>
+
+    <div class="row title">
+        <div class="col-4">List of Fruits</div>
+        <div class="col-4">List of Fruits & Legumes</div>
+        <div class="col-4">List of Legumes</div>
+    </div>
+    <div class="row ">
+        <div class="col d" id="listOfFruits">
+            <div class="divf">Fruits! - Apple</div>
+            <div class="divf">Fruits! - Mangos</div>
+        </div>
+        <div class="col d" id="listOfFruitsLegumes">
+            <div class="divfg">Fruits! - Pineapples</div>
+            <div class="divfg">Fruits! - Bananas</div>
+            <div class="divfg">Legumes! - Potato</div>
+            <div class="divfg">Legumes! - Lentils</div>
+        </div>
+        <div class="col d" id="listOfLegumes">
+            <div class="divg">Legumes! - Broccoli</div>
+            <div class="divg">Legumes! - Green Beans</div>
+        </div>
+    </div>
+</div>
+
+<script src="new.js"></script>
+</body>
+</html>
